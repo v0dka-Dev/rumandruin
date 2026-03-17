@@ -1,0 +1,267 @@
+<div class="selected-ship-card container-fluid p-0" style="display:none">
+    <div class="row g-0 top-section">
+      <div class="col-md-6">
+        <div class="shipname">ship name</div>
+        <div class="preview-wrap">
+
+          <div class="ship-illustration">
+            
+             <img class="selected-ship-img" src="./images/ships/pickle.png">
+          </div>
+
+          
+
+          
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="stats-panel">
+          <ul class="stats-list">
+            <li><span class="label">Durability</span><span class="dots"></span><span class="value">900</span></li>
+            <li><span class="label">Speed</span><span class="dots"></span><span class="value">10</span></li>
+            <li><span class="label">Maneuverability</span><span class="dots"></span><span class="value">97</span></li>
+            <li><span class="label">Broadside armor</span><span class="dots"></span><span class="value">1.8</span></li>
+            <li><span class="label">Hold</span><span class="dots"></span><span class="value">8000</span></li>
+            <li><span class="label">Crew</span><span class="dots"></span><span class="value">78</span></li>
+            <li><span class="label">Length x height of the hull</span><span class="dots"></span><span class="value">22x3</span></li>
+            <li><span class="label">Displacement</span><span class="dots"></span><span class="value">990t</span></li>
+            <li><span class="label">Light weapons</span><span class="dots"></span><span class="value">0-9-0</span></li>
+            <li><span class="label">Swivel guns</span><span class="dots"></span><span class="value">8</span></li>
+            <li><span class="label">Integrity</span><span class="dots"></span><span class="value">6</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="construction-title">Construction cost</div>
+      
+      <div class="cost-items">
+        <div class="cost-item">
+          <div class="icon-box">
+            <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+              <polygon points="12,12 24,6 36,12 24,18" fill="#b9b9b9"></polygon>
+              <polygon points="12,12 12,26 24,32 24,18" fill="#8f8f8f"></polygon>
+              <polygon points="36,12 36,26 24,32 24,18" fill="#d4d4d4"></polygon>
+              <polygon points="6,21 18,15 30,21 18,27" fill="#a3a3a3"></polygon>
+              <polygon points="6,21 6,35 18,41 18,27" fill="#7f7f7f"></polygon>
+              <polygon points="30,21 30,35 18,41 18,27" fill="#bcbcbc"></polygon>
+            </svg>
+          </div>
+          <div class="cost-value">460</div>
+        </div>
+
+        <div class="cost-item">
+          <div class="icon-box">
+            <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+              <polygon points="8,28 34,14 40,20 14,34" fill="#8a6b3d"></polygon>
+              <polygon points="8,28 14,34 14,39 8,33" fill="#5d4627"></polygon>
+              <polygon points="14,34 40,20 40,25 14,39" fill="#a27d47"></polygon>
+            </svg>
+          </div>
+          <div class="cost-value">23</div>
+        </div>
+
+        <div class="cost-item">
+          <div class="icon-box">
+            <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+              <path d="M10 31 Q24 8 38 16 Q32 30 18 36 Z" fill="#cfcfc9" stroke="#9a9a93" stroke-width="1.2"></path>
+              <path d="M13 28 Q22 17 33 19" fill="none" stroke="#9d9d96" stroke-width="1"></path>
+            </svg>
+          </div>
+          <div class="cost-value">14</div>
+        </div>
+      </div>
+      <div class="construction-title">Costings</div>
+
+      <div class="costing-section">
+        <div class="costing-box">
+          <h4>Self Craft</h4>
+          <div class="self-craft-list"></div>
+        </div>
+
+        <div class="costing-box">
+          <h4>Buy</h4>
+          <h8>Enter cost for 1 item i.e 1 beam costs 200 input 200</h8>
+          <div class="buy-price-inputs"></div>
+          <div class="cost-total">Total: <span class="buy-total">0</span> G</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid p-4">
+
+    <!-- Tier Header -->
+    <div class="row tier-header text-center">
+        <div class="col-2 category"></div>
+
+        <div class="col">VII</div>
+        <div class="col">VI</div>
+        <div class="col">V</div>
+        <div class="col">IV</div>
+        <div class="col">III</div>
+        <div class="col">II</div>
+        <div class="col">I</div>
+    </div>
+
+    <!-- Fast Row -->
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Fast</span> <img class="ship-img" src="./images/icons/fast.png"></div>
+        <div class="col ship-card" data-ship="pickle">
+            <img class="ship-img" src="./images/ships/pickle.png">
+            <div>Pickle</div>
+        </div>
+        <div class="col ship-card" data-ship="lacerf"><img class="ship-img" src="./images/ships/lacerf.png">
+            <div>Le Cerf</div>
+        </div>
+        <div class="col ship-card" data-ship="lacreole"><img class="ship-img" src="./images/ships/lacreole.png">
+            <div>La Creole</div>
+        </div>
+        <div class="col ship-card" data-ship="surprise"><img class="ship-img" src="./images/ships/surprise.png">
+            <div>Surprise</div>
+        </div>
+        <div class="col ship-card" data-ship="poltava"><img class="ship-img" src="./images/ships/poltava.png">
+            <div>Poltava</div>
+        </div>
+        <div class="col ship-card" data-ship="ingermanland"><img class="ship-img" src="./images/ships/ingermanland.png">
+            <div>Ingermanland</div>
+        </div>
+        <div class="col ship-card"><img class="ship-img" src="./images/blank.png">
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Combat Row -->
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Combat</span> <img class="ship-img" src="./images/icons/combat.png"></div>
+        <div class="col ship-card" data-ship="horizon"><img class="ship-img" src="./images/ships/horizont.png">
+            <div>Horizon</div>
+        </div>
+        <div class="col ship-card" data-ship="lasalamander"><img class="ship-img" src="./images/ships/lasalamander.png">
+            <div>La Salamandre</div>
+        </div>
+        <div class="col ship-card" data-ship="blackwind"><img class="ship-img" src="./images/ships/blackwind.png">
+            <div>Black Wind</div>
+        </div>
+        <div class="col ship-card" data-ship="essex" ><img class="ship-img" src="./images/ships/essex.png">
+            <div>Essex</div>
+        </div>
+        <div class="col ship-card" data-ship="anson"><img class="ship-img" src="./images/ships/anson.png">
+            <div>Anson</div>
+        </div>
+        <div class="col ship-card" data-ship="sanspareil"><img class="ship-img" src="./images/ships/sanspareil.png">
+            <div>Sans Pareil</div>
+        </div>
+        <div class="col ship-card" data-ship="victory"><img class="ship-img" src="./images/ships/victory.png">
+            <div>Victory</div>
+        </div>
+    </div>
+
+    <!-- Transport Row -->
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Tranport</span> <img class="ship-img" src="./images/icons/transport.png">
+        </div>
+        <div class="col ship-card" data-ship="friede"><img class="ship-img" src="./images/ships/friede.png">
+            <div>Friede</div>
+        </div>
+        <div class="col ship-card" data-ship="mercury"><img class="ship-img" src="./images/ships/mercury.png">
+            <div>Mercury</div>
+        </div>
+        <div class="col ship-card" data-ship="russia"><img class="ship-img" src="./images/ships/russia.png">
+            <div>Russia</div>
+        </div>
+        <div class="col ship-card" data-ship="falmouth"><img class="ship-img" src="./images/ships/falmouth.png">
+            <div>Falmouth</div>
+        </div>
+        <div class="col ship-card" data-ship="mordaunt"><img class="ship-img" src="./images/ships/mordant.png">
+            <div>Mordaunt</div>
+        </div>
+        <div class="col ship-card" data-ship="lasirene"><img class="ship-img" src="./images/ships/lasirene.png">
+            <div>La Sirene</div>
+        </div>
+        <div class="col ship-card" data-ship="lacouronne"><img class="ship-img" src="./images/ships/lacouronne.png">
+            <div>La Couronne</div>
+        </div>
+    </div>
+
+    <!-- Heavy Row -->
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Heavy</span> <img class="ship-img" src="./images/icons/heavy.png"></div>
+        <div class="col ship-card"><img class="ship-img" src="./images/blank.png">
+            <div></div>
+        </div>
+        <div class="col ship-card" data-ship="phoenix"><img class="ship-img" src="./images/ships/phoenix.png">
+            <div>Phoenix</div>
+        </div>
+        <div class="col ship-card" data-ship="sanmartin"><img class="ship-img" src="./images/ships/sanmartin.png">
+            <div>San Martin</div>
+        </div>
+        <div class="col ship-card" data-ship="constitution"><img class="ship-img" src="./images/ships/constitution.png">
+            <div>Constitution</div>
+        </div>
+        <div class="col ship-card" data-ship="bellona"><img class="ship-img" src="./images/ships/bellona.png">
+            <div>Bellona</div>
+        </div>
+        <div class="col ship-card" data-ship="redoutable"><img class="ship-img" src="./images/ships/redoutable.png">
+            <div>Redoutable</div>
+        </div>
+        <div class="col ship-card" data-ship="12apostolov"><img class="ship-img" src="./images/ships/12apostolov.png">
+            <div>12 Apostolov</div>
+        </div>
+    </div>
+
+
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Siege</span> <img class="ship-img" src="./images/icons/siege.png"></div>
+        <div class="col ship-card"><img class="ship-img" src="./images/blank.png">
+            <div></div>
+        </div>
+        <div class="col ship-card" data-ship="polacca"><img class="ship-img" src="./images/ships/polacca.png">
+            <div>Polacca</div>
+        </div>
+        <div class="col ship-card" data-ship="lerequin"><img class="ship-img" src="./images/ships/lerequin.png">
+            <div>Le Requin</div>
+        </div>
+        <div class="col ship-card"><img class="ship-img" src="./images/blank.png">
+            <div></div>
+        </div>
+        <div class="col ship-card" data-ship="kobukson"><img class="ship-img" src="./images/ships/kobukson.png">
+            <div>Kobukson</div>
+        </div>
+        <div class="col ship-card" data-ship="adventure"><img class="ship-img" src="./images/ships/adventure.png">
+            <div>Adventure</div>
+        </div>
+        <div class="col ship-card" data-ship="laroyal"><img class="ship-img" src="./images/ships/laroyale.png">
+            <div>La Royal</div>
+        </div>
+    </div>
+
+
+
+    <div class="row align-items-center grid-row">
+        <div class="col-2 category"> <span>Imperial</span> <img class="ship-img" src="./images/icons/imperial.png">
+        </div>
+        <div class="col ship-card"><img class="ship-img" src="./images/blank.png">
+            <div></div>
+        </div>
+        <div class="col ship-card" data-ship="balloon"><img class="ship-img" src="./images/ships/balloon.png">
+            <div>Ballon</div>
+        </div>
+        <div class="col ship-card" data-ship="blackprince"><img class="ship-img" src="./images/ships/blackprince.png">
+            <div>Black Prince</div>
+        </div>
+        <div class="col ship-card" data-ship="devourer"><img class="ship-img" src="./images/ships/devourer.png">
+            <div>Devourer</div>
+        </div>
+        <div class="col ship-card" data-ship="deadfish"><img class="ship-img" src="./images/ships/deadfish.png">
+            <div>Deadfish</div>
+        </div>
+        <div class="col ship-card" data-ship="octopus"><img class="ship-img" src="./images/ships/octopus.png">
+            <div>Octopus</div>
+        </div>
+        <div class="col ship-card" data-ship="huracan"><img class="ship-img" src="./images/ships/huracan.png">
+            <div>Huracan</div>
+        </div>
+    </div>
+
