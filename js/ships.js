@@ -780,7 +780,7 @@ const shipData = {
       integrity: 6
     },
     costs: {
-      blueprint: 25,
+      BlueprintFrag: 25,
       escudo: 20
     }
   },
@@ -800,7 +800,7 @@ const shipData = {
       integrity: 7
     },
     costs: {
-      impblue: 5,
+      ImperialBlueprint: 5,
       escudo: 400
     }
   },
@@ -820,7 +820,7 @@ const shipData = {
       integrity: 10
     },
     costs: {
-      impblue: 5,
+      ImperialBlueprint: 5,
       escudo: 400
     }
   },
@@ -840,7 +840,7 @@ const shipData = {
       integrity: 4
     },
     costs: {
-      impblue: 20,
+      ImperialBlueprint: 20,
       escudo: 5000
     }
   },
@@ -860,7 +860,7 @@ const shipData = {
       integrity: 7
     },
     costs: {
-      impblue: 40,
+      ImperialBlueprint: 40,
       escudo: 10000
     }
   },
@@ -883,9 +883,10 @@ const resourceIcons = {
   plates: `<img class="imageSizeShipCalculator" src="./images/icons/plate.png">`,
   bronze: `<img class="imageSizeShipCalculator" src="./images/icons/bronze.png">`,
   battlemarks: `<img class="imageSizeShipCalculator" src="./images/icons/battle_mark.png">`,
+  license: `<img class="imageSizeShipCalculator" src="./images/icons/license.png">`,
   escudo: `<img class="imageSizeShipCalculator" src="./images/icons/escudo.png">`,
-  impblue: `<img class="imageSizeShipCalculator" src="./images/icons/imperial_blueprint.png">`,
-  blueprint: `<img class="imageSizeShipCalculator" src="./images/icons/blueprint_fragment.png">`
+  ImperialBlueprint: `<img class="imageSizeShipCalculator" src="./images/icons/imperial_blueprint.png">`,
+  BlueprintFrag: `<img class="imageSizeShipCalculator" src="./images/icons/blueprint_fragment.png">`
 };
 
 const craftedItemMap = {
