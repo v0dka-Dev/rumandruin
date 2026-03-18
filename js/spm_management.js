@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const section = document.getElementById("main-section");
   const links = document.querySelectorAll("a[data-content]");
 
-  function loadContent(page) {
+  window.loadContent = function(page) {
     fetch(`content/${page}.html`)
       .then(res => {
         if (!res.ok) throw new Error("Network response was not ok");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(`a[data-content="${page}"]`)?.classList.add("active");
       })
       .catch(err => {
-       section.innerHTML = `
+        section.innerHTML = `
           <div class="centered-content">
             <img src="images/error.png" alt="Error">
             <p style="color:yellow">YARRRRR!!! There is a problem with the sails</p>
@@ -23,16 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
       });
-  }
+  };
 
-
-  loadContent("home"); 
+  window.loadContent("home");
 
   links.forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
       const page = link.getAttribute("data-content");
-      loadContent(page);
+      window.loadContent(page);
     });
   });
 });

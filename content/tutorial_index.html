@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="mb-4">
+      <h1 class="mb-2">Tutorials</h1>
+      <p class="text-muted mb-0">Search tutorials and browse by section or tag.</p>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-6">
+        <label for="searchInput" class="form-label">Search</label>
+        <input id="searchInput" type="text" class="form-control" placeholder="Search by title, text, section, or tag..." />
+      </div>
+      <div class="col-md-3">
+        <label for="sectionFilter" class="form-label">Section</label>
+        <select id="sectionFilter" class="form-select">
+          <option value="all">All Sections</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="tagFilter" class="form-label">Tag</label>
+        <select id="tagFilter" class="form-select">
+          <option value="all">All Tags</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="tutorialsContainer"></div>
+  </div>
+
+ 
+</body>
+</html>
