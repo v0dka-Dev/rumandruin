@@ -198,7 +198,7 @@ const shipData = {
       crew: 78,
       hullSize: "26x5",
       displacement: "1125t",
-      lightWeapons: "2*8-0",
+      lightWeapons: "2-8-0",
       swivelGuns: 6,
       integrity: 99999
     },
