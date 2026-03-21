@@ -1,21 +1,22 @@
-const container = document.body;
+const container = document.getElementById("main-section") || document.body;
 
-const observer = new MutationObserver((mutationsList, observer) => {
-    const shipLinks = document.getElementsByClassName("ship-card");
+const observer = new MutationObserver(() => {
+    const shipLinks = document.querySelectorAll(".ship-card[data-ship]");
 
-    if (shipLinks.length > 0) {
-        Array.from(shipLinks).forEach(link => {
-            link.addEventListener("click", (event) => {
-                const shipCard = event.target.closest(".ship-card");
-                const shipName = shipCard.dataset.ship;
-                selectShip(shipName);
-                console.log(shipName);
-            });
+    shipLinks.forEach(link => {
+        if (link.dataset.bound === "true") return;
+
+        link.addEventListener("click", () => {
+            const shipName = link.dataset.ship;
+            selectShip(shipName);
+            console.log(shipName);
         });
 
-        observer.disconnect();
-    }
+        link.dataset.bound = "true";
+    });
 });
+
+observer.observe(container, { childList: true, subtree: true });
 
 
 observer.observe(container, { childList: true, subtree: true });
