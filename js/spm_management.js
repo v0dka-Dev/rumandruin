@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.getElementById("main-section");
-  const links = document.querySelectorAll("a[data-content]");
+  const links = document.querySelectorAll('a[data-content]');
 
-  window.loadContent = function(page) {
+  window.loadContent = function (page) {
     fetch(`content/${page}.html`)
       .then(res => {
         if (!res.ok) throw new Error("Network response was not ok");
@@ -13,6 +13,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
         links.forEach(link => link.classList.remove("active"));
         document.querySelector(`a[data-content="${page}"]`)?.classList.add("active");
+
+        if (page === "ships" && typeof window.initializeShipsPage === "function") {
+          window.initializeShipsPage();
+
+          const scrollToShipsContent = () => {
+            const mainSection = document.getElementById("main-section");
+            if (!mainSection) return;
+
+            const top =
+              mainSection.getBoundingClientRect().top +
+              window.scrollY -
+              72;
+
+            window.scrollTo({
+              top: Math.max(0, top),
+              behavior: "smooth"
+            });
+          };
+
+          requestAnimationFrame(scrollToShipsContent);
+          setTimeout(scrollToShipsContent, 120);
+        }
       })
       .catch(err => {
         section.innerHTML = `

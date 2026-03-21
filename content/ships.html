@@ -1,7 +1,153 @@
+
 <div class="selected-ship-card container-fluid p-0" style="display:none">
+
+  <div class="cannon-config-panel" style="display:none;">
+    <div class="cannon-config-header">
+      <div>
+        <div class="cannon-config-title">Cannon Config</div>
+        <div class="cannon-config-subtitle">Click a cannon on the deck to edit that side of the ship and see costs.</div>
+      </div>
+      <div class="cannon-selected-ship-wrap">
+        <span class="cannon-selected-ship-label">Selected ship</span>
+        <div class="cannon-selected-ship-name">—</div>
+      </div>
+    </div>
+
+    <div class="cannon-config-grid">
+      <section class="cannon-config-group">
+        <div class="cannon-section-header">
+          <h3>Cannon Loadout</h3>
+          <button type="button" id="editCannonPricesBtn" class="cannon-btn cannon-btn-price-edit">Edit Cannon Prices</button>
+        </div>
+
+        <div class="cannon-inline-row">
+          <span>Active cannons</span>
+          <strong id="activeCannonLabel">port cannons</strong>
+        </div>
+
+        <div class="cannon-field">
+          <label for="batteryTypeSelect">Cannon type</label>
+          <select id="batteryTypeSelect"></select>
+        </div>
+
+        <div class="cannon-range-row">
+          <div class="cannon-range-field">
+            <label for="batteryQty">How many of this type</label>
+            <input id="batteryQty" type="range" min="0" max="85" value="0" />
+          </div>
+          <div class="cannon-range-field">
+            <label for="batteryQtyNum">Qty</label>
+            <input id="batteryQtyNum" type="number" min="0" max="85" value="0" />
+          </div>
+        </div>
+
+        <div class="cannon-button-row">
+          <button id="setBatteryQtyBtn" type="button" class="cannon-btn">Apply Quantity</button>
+          <button id="setBatteryAllBtn" type="button" class="cannon-btn cannon-btn-secondary">Fill Cannons</button>
+          <button id="clearBatteryBtn" type="button" class="cannon-btn cannon-btn-secondary">Clear Cannons</button>
+        </div>
+
+        <div class="cannon-stats-grid">
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Cannon slots</div>
+            <div class="cannon-stat-value" id="batterySlots">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Assigned total</div>
+            <div class="cannon-stat-value" id="batteryAssigned">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Selected type qty</div>
+            <div class="cannon-stat-value" id="selectedTypeQty">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Remaining slots</div>
+            <div class="cannon-stat-value" id="batteryRemaining">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Selected qty cost</div>
+            <div class="cannon-stat-value" id="selectedTypeCost">0 G</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Remaining fill cost</div>
+            <div class="cannon-stat-value" id="batteryRemainingCost">0 G</div>
+          </div>
+        </div>
+
+        <div class="cannon-footer-note" id="batteryLoadoutSummary">No cannon types assigned yet.</div>
+      </section>
+
+      <div class="cannon-stage">
+        <div class="cannon-stage-card">
+          <h3 class="cannon-stage-title">Ship Layout</h3>
+          <canvas id="deckCanvas" width="1100" height="820"></canvas>
+        </div>
+      </div>
+
+      <section class="cannon-config-group">
+        <h3>Ship-Wide Cannon Cost</h3>
+
+        <div class="cannon-field">
+          <label for="shipWideTypeSelect">Set all compatible cannons to</label>
+          <select id="shipWideTypeSelect"></select>
+        </div>
+
+        <div class="cannon-stats-grid">
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Already selected</div>
+            <div class="cannon-stat-value" id="uniformAlready">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Still needed</div>
+            <div class="cannon-stat-value" id="uniformNeeded">0</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Cost per cannon</div>
+            <div class="cannon-stat-value" id="uniformPerCost">0 G</div>
+          </div>
+          <div class="cannon-stat-box">
+            <div class="cannon-stat-label">Total fill cost</div>
+            <div class="cannon-stat-value" id="uniformTotalCost">0 G</div>
+          </div>
+        </div>
+<div class="cannon-total-row">
+          <div class="cannon-stat-box cannon-stat-box-full">
+            <div class="cannon-stat-label">Total cannons</div>
+            <div class="cannon-stat-value" id="totalCannons">0</div>
+          </div>
+        </div>
+        <div id="shipClass" style="display:none;">—</div>
+
+        <div class="cannon-footer-note" id="uniformSummary">Choose a cannon type to calculate the ship-wide fill cost.</div>
+      </section>
+    </div>
+  </div>
+
+    <div id="cannonPriceModal" class="cannon-price-modal" style="display:none;">
+      <div class="cannon-price-modal-backdrop" id="cannonPriceModalBackdrop"></div>
+      <div class="cannon-price-modal-card">
+        <div class="cannon-price-modal-header">
+          <div>
+            <div class="cannon-price-modal-title">Edit Cannon Prices</div>
+            <div class="cannon-price-modal-subtitle">Gold cannons only. Pirate token prices are fixed.</div>
+          </div>
+          <button type="button" id="closeCannonPriceModalBtn" class="cannon-btn cannon-btn-secondary">Close</button>
+        </div>
+        <div id="cannonPriceEditorList" class="cannon-price-editor-list"></div>
+        <div class="cannon-price-modal-actions">
+          <button type="button" id="resetCannonPricesBtn" class="cannon-btn cannon-btn-secondary">Reset to Defaults</button>
+          <button type="button" id="saveCannonPricesBtn" class="cannon-btn cannon-btn-price-edit">Save Prices</button>
+        </div>
+      </div>
+    </div>
+
+
     <div class="row g-0 top-section">
       <div class="col-md-6">
+        <div class="shipname-row">
         <div class="shipname">ship name</div>
+        <button type="button" class="configure-cannons-btn">Configure Cannons</button>
+      </div>
         <div class="preview-wrap">
 
           <div class="ship-illustration">
