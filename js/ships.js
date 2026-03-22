@@ -1146,12 +1146,12 @@ const cannonCatalog = [
 ];
 
 const shipBatteryClassMap = {
-  pickle: 'Light', lacerf: 'Light', lacreole: 'Light', surprise: 'Light', poltava: 'Light', ingermanland: 'Light',
-  horizon: 'Medium', lasalamander: 'Medium', blackwind: 'Medium', essex: 'Medium', anson: 'Medium', sanspareil: 'Medium', victory: 'Medium',
-  friede: 'Light', mercury: 'Light', russia: 'Medium', falmouth: 'Medium', mordaunt: 'Medium', lasirene: 'Medium', lacouronne: 'Medium',
-  phoenix: 'Heavy', sanmartin: 'Heavy', constitution: 'Heavy', bellona: 'Heavy', redoutable: 'Heavy', "12apostolov": 'Heavy',
-  polacca: 'Medium', lerequin: 'Medium', kobukson: 'Medium', adventure: 'Medium', laroyal: 'Medium',
-  balloon: 'Light', blackprince: 'Medium', devourer: 'Heavy', deadfish: 'Medium', octopus: 'Heavy', huracan: 'Heavy'
+  pickle: 'Light', lacerf: 'Light', lacreole: 'Light', surprise: 'Medium', poltava: 'Medium', ingermanland: 'Heavy',
+  horizon: 'Light', lasalamander: 'Light', blackwind: 'Light', essex: 'Medium', anson: 'Medium', sanspareil: 'Heavy', victory: 'Heavy',
+  friede: 'Light', mercury: 'Light', russia: 'Light', falmouth: 'Medium', mordaunt: 'Medium', lasirene: 'Heavy', lacouronne: 'Heavy',
+  phoenix: 'Light', sanmartin: 'Light', constitution: 'Medium', bellona: 'Medium', redoutable: 'Heavy', "12apostolov": 'Heavy',
+  polacca: 'Light', lerequin: 'Light', kobukson: 'Medium', adventure: 'Heavy', laroyal: 'Heavy',
+  balloon: 'Light', blackprince: 'Medium', devourer: 'Medium', deadfish: 'Medium', octopus: 'Heavy', huracan: 'Heavy'
 };
 
 let cannonUiInitialized = false;
