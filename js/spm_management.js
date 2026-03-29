@@ -14,17 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
         links.forEach(link => link.classList.remove("active"));
         document.querySelector(`a[data-content="${page}"]`)?.classList.add("active");
 
+        
         if (page === "ships" && typeof window.initializeShipsPage === "function") {
           window.initializeShipsPage();
+        }
 
-          const scrollToShipsContent = () => {
+        
+        if (page === "ships" || page === "tutorial_index" || page === "tutorial") {
+          const scrollToContent = () => {
             const mainSection = document.getElementById("main-section");
             if (!mainSection) return;
 
-            const top =
-              mainSection.getBoundingClientRect().top +
-              window.scrollY -
-              72;
+            const top = mainSection.getBoundingClientRect().top + window.scrollY - 72;
 
             window.scrollTo({
               top: Math.max(0, top),
@@ -32,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
             });
           };
 
-          requestAnimationFrame(scrollToShipsContent);
-          setTimeout(scrollToShipsContent, 120);
+          requestAnimationFrame(scrollToContent);
+          setTimeout(scrollToContent, 120);
         }
       })
       .catch(err => {
