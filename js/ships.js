@@ -1025,7 +1025,7 @@ function updateDiscountSummary(shipKey) {
   }
 
   if(details.totalDiscountPercent.toFixed(0) == 28){
-    controls.summaryText.textContent = `${segments.join(' + ')} = ${details.totalDiscountPercent.toFixed(0)}% effective discount on ship materials. Battlemarks are excluded from all discounts. why is it showing 28%? well the devs cant math properly and dont fully apply 30% its actually 28%`;
+    controls.summaryText.textContent = `${segments.join(' + ')} = ${details.totalDiscountPercent.toFixed(0)}% effective discount on ship materials. Battlemarks are excluded from all discounts. why is it showing 28%? well the devs cant math properly and dont fully apply 30% so its actually 28%`;
   }else{
     controls.summaryText.textContent = `${segments.join(' + ')} = ${details.totalDiscountPercent.toFixed(0)}% effective discount on ship materials. Battlemarks are excluded from all discounts.`;
   }
