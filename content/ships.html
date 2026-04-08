@@ -180,6 +180,40 @@
     </div>
     <div class="bottom-section">
       <div class="construction-title">Construction cost</div>
+
+      <div class="ship-discount-panel">
+        <div class="ship-discount-header">
+          <div>
+            <div class="ship-discount-title">Material discounts</div>
+            <div class="ship-discount-subtitle">Class bonuses and the optional shipyard discount are combined below.</div>
+          </div>
+          <label class="ship-discount-toggle" for="shipDiscountToggle">
+            <input type="checkbox" id="shipDiscountToggle">
+            <span>Apply extra 20% discount</span>
+          </label>
+        </div>
+
+        <div class="ship-discount-stats">
+          <div class="ship-discount-stat">
+            <span class="ship-discount-stat-label">Ship class</span>
+            <strong id="discountShipClass">—</strong>
+          </div>
+          <div class="ship-discount-stat">
+            <span class="ship-discount-stat-label">Class discount</span>
+            <strong id="classDiscountValue">0%</strong>
+          </div>
+          <div class="ship-discount-stat">
+            <span class="ship-discount-stat-label">Toggle discount</span>
+            <strong id="toggleDiscountValue">0%</strong>
+          </div>
+          <div class="ship-discount-stat ship-discount-stat-total">
+            <span class="ship-discount-stat-label">Total discount</span>
+            <strong id="totalDiscountValue">0%</strong>
+          </div>
+        </div>
+
+        <div class="ship-discount-note" id="discountSummaryText">No discounts are active for this ship.</div>
+      </div>
       
       <div class="cost-items">
         <div class="cost-item">

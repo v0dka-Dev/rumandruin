@@ -129,9 +129,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 11,
-      beams: 151,
+      beams: 79,
       bulkheads: 21,
-      canvas: 184
+      canvas: 191
     }
   },
 
@@ -152,9 +152,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 130,
-      beams: 151,
-      bulkheads: 54,
-      canvas: 351
+      beams: 158,
+      bulkheads: 56,
+      canvas: 366
     }
   },
 
@@ -175,10 +175,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 340,
-      beams: 238,
-      bulkheads: 119,
-      canvas: 502,
-      plates: 33
+      beams: 253,
+      bulkheads: 118,
+      canvas: 512,
+      plates: 35
     }
   },
   "ingermanland": {
@@ -198,10 +198,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 735,
-      beams: 443,
-      bulkheads: 259,
-      canvas: 810,
-      plates: 76
+      beams: 461,
+      bulkheads: 270,
+      canvas: 844,
+      plates: 79
     }
   },
   // combat
@@ -222,8 +222,8 @@ const shipData = {
     },
     costs: {
       wood: 766,
-      iron: 219,
-      fabric:31,
+      iron: 220,
+      fabric: 30,
     }
   },
   "lasalamander": {
@@ -264,9 +264,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 11,
-      beams: 76,
-      bulkheads: 39,
-      canvas: 108,
+      beams: 78,
+      bulkheads: 40,
+      canvas: 112,
     }
   },
   "essex": {
@@ -286,9 +286,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 130,
-      beams: 151,
-      bulkheads: 97,
-      canvas: 194,
+      beams: 157,
+      bulkheads: 101,
+      canvas: 202,
     }
   },
   "anson": {
@@ -308,9 +308,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 365,
-      beams: 243,
-      bulkheads: 205,
-      canvas: 281,
+      beams: 258,
+      bulkheads: 207,
+      canvas: 286,
       plates: 37
     }
   },
@@ -331,10 +331,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 740,
-      beams: 454,
-      bulkheads: 454,
-      canvas: 459,
-      plates: 76
+      beams: 471,
+      bulkheads: 471,
+      canvas: 477,
+      plates: 78
     }
   },
   "victory": {
@@ -354,10 +354,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 1650,
-      beams: 897,
-      bulkheads: 2333,
-      canvas: 1392,
-      plates: 178
+      beams: 934,
+      bulkheads: 2430,
+      canvas: 1451,
+      plates: 186
     }
   },
   //transport
@@ -419,9 +419,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 25,
-      beams: 86,
-      bulkheads: 24,
-      canvas: 110,
+      beams: 90,
+      bulkheads: 25,
+      canvas: 124,
     }
   },
   "falmouth": {
@@ -441,9 +441,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 60,
-      beams: 178,
-      bulkheads: 59,
-      canvas: 207,
+      beams: 186,
+      bulkheads: 62,
+      canvas: 236,
     }
   },
   "mordaunt": {
@@ -463,10 +463,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 120,
-      beams: 292,
+      beams: 304,
       bulkheads: 135,
-      canvas: 329,
-      plates: 31
+      canvas: 332,
+      plates: 33
     }
   },
   "lasirene": {
@@ -486,10 +486,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 160,
-      beams: 567,
-      bulkheads: 297,
-      canvas: 524,
-      plates: 65
+      beams: 591,
+      bulkheads: 309,
+      canvas: 546,
+      plates: 68
     }
   },
   "lacouronne": {
@@ -509,10 +509,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 200,
-      beams: 1199,
-      bulkheads: 1555,
-      canvas: 1728,
-      plates: 108
+      beams: 1249,
+      bulkheads: 1620,
+      canvas: 1800,
+      plates: 112
     }
   },
   //heavy
@@ -553,9 +553,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 11,
-      beams: 92,
-      bulkheads: 49,
-      canvas: 86
+      beams: 96,
+      bulkheads: 51,
+      canvas: 90
     }
   },
   "constitution": {
@@ -575,9 +575,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 145,
-      beams: 189,
-      bulkheads: 119,
-      canvas: 146
+      beams: 197,
+      bulkheads: 124,
+      canvas: 158
     }
   },
   "bellona": {
@@ -597,10 +597,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 385,
-      beams: 302,
+      beams: 321,
       bulkheads: 259,
-      canvas: 221,
-      plates: 39
+      canvas: 225,
+      plates: 40
     }
   },
   "redoutable": {
@@ -620,10 +620,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 775,
-      beams: 561,
-      bulkheads: 572,
-      canvas: 340,
-      plates: 81
+      beams: 585,
+      bulkheads: 591,
+      canvas: 354,
+      plates: 84
     }
   },
   "12apostolov": {
@@ -643,10 +643,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 1830,
-      beams: 1112,
-      bulkheads: 2916,
-      canvas: 799,
-      plates: 200,
+      beams: 1159,
+      bulkheads: 3038,
+      canvas: 832,
+      plates: 208,
       license: 1
     }
   },
@@ -688,9 +688,9 @@ const shipData = {
     },
     costs: {
       battlemarks: 11,
-      beams: 65,
-      bulkheads: 37,
-      canvas: 119
+      beams: 68,
+      bulkheads: 38,
+      canvas: 124
     }
   },
   "kobukson": {
@@ -710,10 +710,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 330,
-      beams: 200,
-      bulkheads: 205,
-      canvas: 265,
-      plates: 32
+      beams: 208,
+      bulkheads: 208,
+      canvas: 270,
+      plates: 34
     }
   },
   "adventure": {
@@ -733,10 +733,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 540,
-      beams: 416,
-      bulkheads: 383,
-      canvas: 551,
-      plates: 54
+      beams: 433,
+      bulkheads: 399,
+      canvas: 574,
+      plates: 56
     }
   },
   "laroyal": {
@@ -756,10 +756,10 @@ const shipData = {
     },
     costs: {
       battlemarks: 1090,
-      beams: 740,
-      bulkheads: 1922,
-      canvas: 1598,
-      plates: 113
+      beams: 771,
+      bulkheads: 2002,
+      canvas: 1665,
+      plates: 118
     }
   },
   // imperial
@@ -884,7 +884,7 @@ const shipData = {
   },
 };
 
-// covers every resource type you mentioned
+// covers every resource type as of now.. maybe they will add more hopefully not :| 
 const resourceIcons = {
   wood: `<img class="imageSizeShipCalculator" src="./images/icons/wood.png">`,
   iron: `<img class="imageSizeShipCalculator" src="./images/icons/iron.png">`,
@@ -925,6 +925,140 @@ const craftedItemCosts = {
   plate: 959,
   bronze: 916
 };
+
+const DISCOUNT_SETTINGS = {
+  shipClass: 'combat',
+  shipClassDiscountPercent: 10,
+  toggleDiscountPercent: 20
+};
+
+let extraDiscountEnabled = false;
+
+function getDiscountControls() {
+  return {
+    toggle: document.getElementById('shipDiscountToggle'),
+    shipClass: document.getElementById('discountShipClass'),
+    classDiscountValue: document.getElementById('classDiscountValue'),
+    toggleDiscountValue: document.getElementById('toggleDiscountValue'),
+    totalDiscountValue: document.getElementById('totalDiscountValue'),
+    summaryText: document.getElementById('discountSummaryText')
+  };
+}
+
+function normalizeShipClassName(value) {
+  return String(value || '').trim().toLowerCase();
+}
+
+function getShipClass(shipKey) {
+  const card = document.querySelector(`.ship-card[data-ship="${shipKey}"]`);
+  const row = card?.closest('.grid-row');
+  const classLabel = row?.querySelector('.category span');
+  return classLabel ? classLabel.textContent.trim() : 'Unknown';
+}
+
+function getShipDiscountDetails(shipKey) {
+  const shipClass = getShipClass(shipKey);
+  const classDiscountPercent = normalizeShipClassName(shipClass) === normalizeShipClassName(DISCOUNT_SETTINGS.shipClass)
+    ? Number(DISCOUNT_SETTINGS.shipClassDiscountPercent || 0)
+    : 0;
+  const toggleDiscountPercent = extraDiscountEnabled ? Number(DISCOUNT_SETTINGS.toggleDiscountPercent || 0) : 0;
+  const classDiscountMultiplier = Math.max(0, 1 - (classDiscountPercent / 100));
+  const toggleDiscountMultiplier = Math.max(0, 1 - (toggleDiscountPercent / 100));
+  const combinedDiscountMultiplier = classDiscountMultiplier * toggleDiscountMultiplier;
+  const totalDiscountPercent = (1 - combinedDiscountMultiplier) * 100;
+
+  return {
+    shipClass,
+    classDiscountPercent,
+    toggleDiscountPercent,
+    totalDiscountPercent,
+    combinedDiscountMultiplier
+  };
+}
+
+function applyDiscountToAmount(amount, discountMultiplier) {
+  const numericAmount = Number(amount || 0);
+  const safeMultiplier = Number.isFinite(discountMultiplier)
+    ? Math.min(1, Math.max(0, discountMultiplier))
+    : 1;
+  return Math.max(0, Math.ceil(numericAmount * safeMultiplier));
+}
+
+function getDiscountedCosts(costs, discountDetails) {
+  return Object.fromEntries(
+    Object.entries(costs).map(([resource, amount]) => {
+      if (resource === 'battlemarks') {
+        return [resource, Number(amount || 0)];
+      }
+
+      return [resource, applyDiscountToAmount(amount, discountDetails.combinedDiscountMultiplier)];
+    })
+  );
+}
+
+function updateDiscountSummary(shipKey) {
+  const controls = getDiscountControls();
+  if (!controls.shipClass || !controls.classDiscountValue || !controls.toggleDiscountValue || !controls.totalDiscountValue || !controls.summaryText) {
+    return;
+  }
+
+  const details = getShipDiscountDetails(shipKey);
+  controls.shipClass.textContent = formatLabel(details.shipClass);
+  controls.classDiscountValue.textContent = `${details.classDiscountPercent}%`;
+  controls.toggleDiscountValue.textContent = `${details.toggleDiscountPercent}%`;
+  controls.totalDiscountValue.textContent = `${details.totalDiscountPercent.toFixed(0)}%`;
+
+  const classDiscountShip = normalizeShipClassName(DISCOUNT_SETTINGS.shipClass);
+  const readableConfiguredClass = formatLabel(classDiscountShip);
+
+  if (details.totalDiscountPercent <= 0) {
+    controls.summaryText.textContent = `No discount is active.`;
+    return;
+  }
+
+  const segments = [];
+  if (details.classDiscountPercent > 0) {
+    segments.push(`${details.classDiscountPercent}% class bonus for ${readableConfiguredClass} ships`);
+  }
+  if (details.toggleDiscountPercent > 0) {
+    segments.push(`${details.toggleDiscountPercent}% toggle discount`);
+  }
+
+  if(details.totalDiscountPercent.toFixed(0) == 28){
+    controls.summaryText.textContent = `${segments.join(' + ')} = ${details.totalDiscountPercent.toFixed(0)}% effective discount on ship materials. Battlemarks are excluded from all discounts. why is it showing 28%? well the devs cant math properly and dont fully apply 30% its actually 28%`;
+  }else{
+    controls.summaryText.textContent = `${segments.join(' + ')} = ${details.totalDiscountPercent.toFixed(0)}% effective discount on ship materials. Battlemarks are excluded from all discounts.`;
+  }
+  
+}
+
+function renderSelectedShipCosts(shipKey) {
+  const ship = shipData[shipKey];
+  if (!ship) return;
+
+  const details = getShipDiscountDetails(shipKey);
+  const displayedCosts = getDiscountedCosts(ship.costs, details);
+
+  renderCosts(displayedCosts);
+  renderSelfCraft(displayedCosts);
+  renderBuyInputs(displayedCosts);
+  updateDiscountSummary(shipKey);
+}
+
+function bindDiscountControls() {
+  const controls = getDiscountControls();
+  if (!controls.toggle || controls.toggle.dataset.bound === 'true') return;
+
+  controls.toggle.checked = extraDiscountEnabled;
+  controls.toggle.addEventListener('change', () => {
+    extraDiscountEnabled = controls.toggle.checked;
+    if (selectedShipKey) {
+      renderSelectedShipCosts(selectedShipKey);
+    }
+  });
+
+  controls.toggle.dataset.bound = 'true';
+}
 
 function formatLabel(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -2225,6 +2359,7 @@ function clearSelectedShipView() {
 function initializeShipsPage() {
   clearSelectedShipView();
   bindCannonConfigurator();
+  bindDiscountControls();
 }
 
 function selectShip(shipName) {
@@ -2248,9 +2383,7 @@ function selectShip(shipName) {
   selectedImg.alt = shipName;
 
   renderStats(ship.stats);
-  renderCosts(ship.costs);
-  renderSelfCraft(ship.costs);
-  renderBuyInputs(ship.costs);
+  renderSelectedShipCosts(shipName);
 
   const displayName = getShipDisplayName(shipName);
   shipname.textContent = displayName;
